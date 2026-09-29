@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dipak Kumar Sah - Resume</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 45px 55px;
+            border-radius: 10px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #2563eb;
+        }
+
+        h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 38px;
+            color: #1f2937;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: #2563eb;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 5px 0 12px;
+        }
+
+        .contact {
+            color: #555;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* SECTIONS */
+        h2 {
+            font-size: 20px;
+            color: #2563eb;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 6px;
+            margin-top: 30px;
+            margin-bottom: 18px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #4b5563;
+        }
+
+        strong {
+            color: #1f2937;
+        }
+
+        /* EDUCATION */
+        .education {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8fafc;
+            padding: 18px 20px;
+            border-left: 4px solid #2563eb;
+            border-radius: 5px;
+        }
+
+        .education h3 {
+            margin: 0 0 5px;
+            color: #1f2937;
+            font-size: 16px;
+        }
+
+        .education p {
+            margin: 0;
+        }
+
+        .cgpa {
+            background: #eff6ff;
+            color: #2563eb;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+
+        /* SKILLS */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .skill-box {
+            background: #f8fafc;
+            padding: 18px;
+            border-radius: 8px;
+            border-top: 3px solid #2563eb;
+        }
+
+        .skill-box h3 {
+            margin: 0 0 12px;
+            color: #1f2937;
+            font-size: 15px;
+        }
+
+        .skill-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-box li {
+            font-size: 14px;
+            color: #4b5563;
+            padding: 5px 0;
+        }
+
+        .skill-box li::before {
+            content: "•";
+            color: #2563eb;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        /* PROJECT */
+        .project {
+            background: #f8fafc;
+            padding: 18px 20px;
+            border-left: 4px solid #2563eb;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            margin: 0 0 8px;
+            color: #1f2937;
+            font-size: 17px;
+        }
+
+        .project p {
+            margin: 5px 0;
+        }
+
+        .tech {
+            margin-top: 12px;
+        }
+
+        .tech span {
+            display: inline-block;
+            background: #eff6ff;
+            color: #2563eb;
+            padding: 4px 9px;
+            margin: 3px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* PERSONAL DETAILS */
+        .personal-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .detail {
+            background: #f8fafc;
+            padding: 12px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 650px) {
+            body {
+                padding: 15px;
+            }
+
+            .resume {
+                padding: 30px 25px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .education {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+
+            .personal-details {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* PRINT */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .resume {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Dipak Kumar Sah</h1>
+        <p class="subtitle">Web Developer</p>
+
+        <p class="contact">
+            <strong>Email:</strong> dipaksah.npl01@gmail.com
+            &nbsp;&nbsp; | &nbsp;&nbsp;
+            <strong>Phone:</strong> +91 9821208496
+        </p>
+    </div>
+
+    <!-- CAREER OBJECTIVE -->
+    <h2>Career Objective</h2>
+
+    <p>
+        Motivated and passionate developer looking for opportunities
+        to build web applications and improve my technical skills.
+    </p>
+
+    <!-- EDUCATION -->
+    <h2>Education</h2>
+
+    <div class="education">
+        <div>
+            <h3>BMS Institute of Technology and Management</h3>
+            <p>Bachelor of Engineering</p>
+        </div>
+
+        <span class="cgpa">CGPA: 8.53</span>
+    </div>
+
+    <!-- SKILLS -->
+    <h2>Technical Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-box">
+            <h3>Frontend</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h3>Backend</h3>
+            <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>REST APIs</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <h3>Tools & Database</h3>
+            <ul>
+                <li>MongoDB</li>
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- PROJECTS -->
+    <h2>Projects</h2>
+
+    <div class="project">
+
+        <h3>FindCars</h3>
+
+        <p>
+            Developed a web application for finding and exploring cars
+            using modern full-stack web technologies.
+        </p>
+
+        <div class="tech">
+            <span>MongoDB</span>
+            <span>Express.js</span>
+            <span>React.js</span>
+            <span>Node.js</span>
+        </div>
+
+    </div>
+
+    <!-- PERSONAL DETAILS -->
+    <h2>Personal Details</h2>
+
+    <div class="personal-details">
+
+        <div class="detail">
+            <strong>Name</strong><br>
+            Dipak Kumar Sah
+        </div>
+
+        <div class="detail">
+            <strong>CGPA</strong><br>
+            8.53
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
